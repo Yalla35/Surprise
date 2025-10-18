@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Monthsary Menu</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Back button styling */
+    .back-btn {
+      background-color: #ffb6c1;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ff8da1;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="logo">A💞K</div>
+        <div>
+          <h2 style="margin:0">To My Babi</h2>
+          <div style="color:#8b5b63;font-weight:600">Monthsary Gift</div>
+        </div>
+      </div>
+
+      <div class="menu">
+        <a class="card-btn" href="loveletter.html">
+          <div class="card-icon">💌</div>
+          <div class="card-title">Love Letter</div>
+          <div class="small">Open the letter</div>
+        </a>
+
+        <a class="card-btn" href="music.html">
+          <div class="card-icon">🎵</div>
+          <div class="card-title">Music That Reminds Us</div>
+          <div class="small">A special song</div>
+        </a>
+
+        <a class="card-btn" href="vms.html">
+          <div class="card-icon">🎙️</div>
+          <div class="card-title">VM's</div>
+          <div class="small">Voice messages</div>
+        </a>
+
+        <a class="card-btn" href="photos.html">
+          <div class="card-icon">📸</div>
+          <div class="card-title">Photos</div>
+          <div class="small">Your Photos</div>
+        </a>
+
+        <a class="card-btn" href="videos.html">
+          <div class="card-icon">🎬</div>
+          <div class="card-title">Videos</div>
+          <div class="small">Video moments</div>
+        </a>
+      </div>
+
+      <p class="small" style="margin-top:18px">Made with 💖 by Annie</p>
+    </div>
+  </div>
+  <button class="back-btn" onclick="goBack()">← Back to Login</button>
+  <script>
+    function goBack() {
+      window.location.href = "index.html"; 
+    }
+  </script>
+</body>
+</html>
